@@ -8,7 +8,7 @@ Include jQuery, Steem.js and the plugin itself into your website.
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdn.steemjs.com/lib/latest/steem.min.js"></script>
-    <script src="https://cdn.rawgit.com/mktcode/steemit-posts/4d640303/steemit-posts.js"></script>
+    <script src="https://cdn.rawgit.com/mktcode/steemit-posts/dab46ba5/steemit-posts.js"></script>
 
 You can also download those files and upload them to you webspace. However, using these CDN resources saves performance and space and is quicker.
 
