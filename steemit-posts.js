@@ -20,7 +20,7 @@
                     .replace(/\${URL}/gi, blog[i].url)
                     .replace(/\${TITLE}/gi, blog[i].title)
                     .replace(/\${DATE}/gi, settings.dateCallback(new Date(blog[i].created)))
-                    .replace(/\${IMAGE}/gi, metaData.image[0])
+                    .replace(/\${IMAGE}/gi, metaData.image ? metaData.image[0] : '')
                     .replace(/\${PAYOUT}/gi, blog[i].pending_payout_value)
                     .replace(/\${COMMENTS}/gi, blog[i].children)
                     .replace(/\${UPVOTES}/gi, blog[i].net_votes);
