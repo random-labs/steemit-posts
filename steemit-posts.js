@@ -17,7 +17,7 @@
             for (var i = 0; i < blog.length; i++) {
                 var metaData = JSON.parse(blog[i].json_metadata);
                 var html = settings.postTemplate
-                    .replace(/\${URL}/gi, blog[i].url)
+                    .replace(/\${URL}/gi, 'https://steemit.com' + blog[i].url)
                     .replace(/\${TITLE}/gi, blog[i].title)
                     .replace(/\${DATE}/gi, settings.dateCallback(new Date(blog[i].created)))
                     .replace(/\${IMAGE}/gi, metaData.image ? metaData.image[0] : '')
