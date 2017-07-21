@@ -1,6 +1,6 @@
 # Steemit Posts
 
-### Show posts from steemit.com blogs on you website.
+### Show posts from steemit.com blogs on your website. ([demo](https://markus-kottlaender.de))
 
 # Include Files
 
