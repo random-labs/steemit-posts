@@ -28,6 +28,8 @@ You can also download those files and upload them to you webspace. However, usin
 - **limit**: integer, the maximum number of posts to show (default: `10`)
 - **dateCallback**: callback, a callback function to manipulation the date output, (default: `function (date) {return date;}`
 - **postTemplate**: string, the html template for a post (default: `'<a class="steemit-post" href="https://steemit.com${URL}"><h2>${TITLE}</h2><h5>${DATE}</h5><img src="${IMAGE}" alt="${TITLE}" /><p>${PAYOUT}</p><p>${COMMENTS} comments</p><p>${UPVOTES} upvotes</p></a>'`
+- **resteemedHtml**: string, html output if a post was resteemed,
+- **defaultImage**: string, default image source
 
 ## Placeholders
 
