@@ -36,6 +36,7 @@ You can also download those files and upload them to you webspace. However, usin
 In the html of the`postTemplate` option you can use the following placeholders:
 
 - *${TITLE}*: post title
+- *${RESTEEMED}*: resteemed html
 - *${DATE}*: date of post creation
 - *${IMAGE}*: post image
 - *${PAYOUT}*: total post payout in SBD
