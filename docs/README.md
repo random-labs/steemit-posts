@@ -1,3 +1,7 @@
+---
+title:  "Steemit Posts"
+---
+
 # Steemit Posts
 
 ### This jQuery plugin lets you display posts from steemit.com on your website. See a [live demo](https://markus-kottlaender.de) on my website.
