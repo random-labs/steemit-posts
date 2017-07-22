@@ -17,7 +17,7 @@ For the impatient, here's a quick minimum implementation to display your own pos
   </script>
 </body>
 ```
-You can adjust it to your needs, by looking at the [options](#configure).
+You can adjust it to your needs, by looking at the [options](#step-3-configure).
 
 There is also a simple and an advanced example html file in the `examples` directory.
 
