@@ -2,13 +2,7 @@
 
 ### This jQuery plugin lets you display posts from steemit.com on your website.
 
-#### Demos
-
-[Simple](https://mktcode.github.io/steemit-posts/examples/simple.html)
-
-[Advanced](https://mktcode.github.io/steemit-posts/examples/advanced.html)
-
-[Live](https://markus-kottlaender.de)
+#### Demos: [Simple](https://mktcode.github.io/steemit-posts/examples/simple.html) - [Advanced](https://mktcode.github.io/steemit-posts/examples/advanced.html) - [Live](https://markus-kottlaender.de)
 
 For the impatient, here's a quick minimum implementation to display your own posts:
 
