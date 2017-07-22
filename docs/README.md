@@ -8,7 +8,7 @@
 
 [Advanced](https://mktcode.github.io/steemit-posts/examples/advanced.html)
 
-[Live](https://markus-kottlaender.de) on my website.
+[Live](https://markus-kottlaender.de)
 
 For the impatient, here's a quick minimum implementation to display your own posts:
 
