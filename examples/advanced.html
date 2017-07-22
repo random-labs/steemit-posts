@@ -10,9 +10,23 @@
       font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
     }
 
+    h1 {
+      text-align: center;
+    }
+
+    .column {
+      width: 25%;
+      float: left;
+    }
+
+    .column > div {
+      margin: 0 10px;
+    }
+
     .steemit-post {
-      width: 320px;
-      margin: 25px auto;
+      width: 100%;
+      margin: 20px 0;
+      box-sizing: border-box;
       padding: 15px;
       border: solid 1px #aaa;
       border-radius: 5px;
@@ -51,10 +65,37 @@
       margin-top: 5px;
       color: #666;
     }
+
+    @media (max-width: 1200px) {
+      .column {
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .column {
+        float: none;
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
-  <div id="blog"></div>
+  <div class="column">
+    <h1>Blog</h1>
+    <div id="blog"></div>
+  </div>
+  <div class="column">
+    <h1>Feed</h1>
+    <div id="feed"></div>
+  </div><div class="column">
+    <h1>Trending in Steemit</h1>
+    <div id="trending"></div>
+  </div><div class="column">
+    <h1>Hot in Life</h1>
+    <div id="hot"></div>
+  </div>
+
   <script src="../lib/jquery-3.2.1.min.js"></script>
   <script src="../lib/marked.min.js"></script>
   <script src="../lib/moment.min.js"></script>
@@ -63,10 +104,41 @@
   <script>
     $('#blog').steemitBlog({
       user: 'mkt',
-      limit: 9,
-      postTemplate: '<div class="steemit-post"><h2><a href="${URL}">${RESTEEMED}${TITLE}</a></h2><div class="steemit-post-date-and-category">${DATE} in <a href="https://steemit.com/trending/${MAINTAG}">${MAINTAG}</a></div><div class="steemit-post-image" style="background-image: url(${IMAGE});"></div><div class="steemit-post-meta">${UPVOTES} Upvotes (${PAYOUT}) | ${COMMENTS} Comments</div></div>',
+      limit: 3,
+      postTemplate: '<div class="steemit-post"><h2><a href="${URL}">${RESTEEMED}${TITLE}</a></h2><div class="steemit-post-date-and-category">${DATE} in <a href="https://steemit.com/trending/${MAINTAG}">${MAINTAG}</a><br>by ${AUTHOR}</div><div class="steemit-post-image" style="background-image: url(${IMAGE});"></div><div class="steemit-post-meta">${UPVOTES} Upvotes (${PAYOUT}) | ${COMMENTS} Comments</div></div>',
       defaultImage: 'http://markus-kottlaender.de/logo.png',
       resteemedHtml: '&crarr; ',
+      dateCallback: function (date) {
+        return moment(date).format('MMMM Do YYYY, h:mm a');
+      }
+    });
+
+    $('#feed').steemitFeed({
+      user: 'mkt',
+      limit: 3,
+      postTemplate: '<div class="steemit-post"><h2><a href="${URL}">${RESTEEMED}${TITLE}</a></h2><div class="steemit-post-date-and-category">${DATE} in <a href="https://steemit.com/trending/${MAINTAG}">${MAINTAG}</a><br>by ${AUTHOR} ${RESTEEMEDBY}</div><div class="steemit-post-image" style="background-image: url(${IMAGE});"></div><div class="steemit-post-meta">${UPVOTES} Upvotes (${PAYOUT}) | ${COMMENTS} Comments</div></div>',
+      defaultImage: 'http://markus-kottlaender.de/logo.png',
+      resteemedHtml: '&crarr; ',
+      dateCallback: function (date) {
+        return moment(date).format('MMMM Do YYYY, h:mm a');
+      }
+    });
+
+    $('#trending').steemitTrending({
+      tag: 'steemit',
+      limit: 3,
+      postTemplate: '<div class="steemit-post"><h2><a href="${URL}">${TITLE}</a></h2><div class="steemit-post-date-and-category">${DATE} in <a href="https://steemit.com/trending/${MAINTAG}">${MAINTAG}</a><br>by ${AUTHOR}</div><div class="steemit-post-image" style="background-image: url(${IMAGE});"></div><div class="steemit-post-meta">${UPVOTES} Upvotes (${PAYOUT}) | ${COMMENTS} Comments</div></div>',
+      defaultImage: 'http://markus-kottlaender.de/logo.png',
+      dateCallback: function (date) {
+        return moment(date).format('MMMM Do YYYY, h:mm a');
+      }
+    });
+
+    $('#hot').steemitHot({
+      tag: 'life',
+      limit: 3,
+      postTemplate: '<div class="steemit-post"><h2><a href="${URL}">${TITLE}</a></h2><div class="steemit-post-date-and-category">${DATE} in <a href="https://steemit.com/trending/${MAINTAG}">${MAINTAG}</a><br>by ${AUTHOR}</div><div class="steemit-post-image" style="background-image: url(${IMAGE});"></div><div class="steemit-post-meta">${UPVOTES} Upvotes (${PAYOUT}) | ${COMMENTS} Comments</div></div>',
+      defaultImage: 'http://markus-kottlaender.de/logo.png',
       dateCallback: function (date) {
         return moment(date).format('MMMM Do YYYY, h:mm a');
       }

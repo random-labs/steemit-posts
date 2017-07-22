@@ -22,6 +22,7 @@
                 var html = settings.postTemplate
                     .replace(/\${URL}/gi, 'https://steemit.com' + blog[i].url)
                     .replace(/\${TITLE}/gi, blog[i].title)
+                    .replace(/\${AUTHOR}/gi, blog[i].author)
                     .replace(/\${RESTEEMED}/gi, blog[i].author != settings.user ? settings.resteemedHtml : '')
                     .replace(/\${DATE}/gi, settings.dateCallback(new Date(blog[i].created)))
                     .replace(/\${IMAGE}/gi, metaData.image ? metaData.image[0] : settings.defaultImage)

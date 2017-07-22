@@ -7,12 +7,22 @@
   <title>Steemit Posts On Your Website (Demo)</title>
 </head>
 <body>
+  <h1>Blog</h1>
   <div id="blog"></div>
+  <h1>Feed</h1>
+  <div id="feed"></div>
+  <h1>Trending</h1>
+  <div id="trending"></div>
+  <h1>Hot</h1>
+  <div id="hot"></div>
   <script src="../lib/jquery-3.2.1.min.js"></script>
   <script src="../lib/steem.min.js"></script>
   <script src="../steemit-posts.js"></script>
   <script>
     $('#blog').steemitBlog({user: 'mkt'});
+    $('#feed').steemitFeed({user: 'mkt'});
+    $('#trending').steemitTrending();
+    $('#hot').steemitHot();
   </script>
 </body>
 </html>
