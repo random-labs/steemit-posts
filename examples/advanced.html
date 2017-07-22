@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Steemit Posts On Your Website (Demo)</title>
+  <style type="text/css">
+    body {
+      font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    }
+
+    .steemit-post {
+      width: 320px;
+      margin: 25px auto;
+      padding: 15px;
+      border: solid 1px #aaa;
+      border-radius: 5px;
+    }
+
+    .steemit-post h2 {
+      margin: 0;
+    }
+
+    .steemit-post h2 a {
+      color: #666;
+      text-decoration: none;
+    }
+
+    .steemit-post h2 a:hover {
+      color: #000;
+    }
+
+    .steemit-post .steemit-post-date-and-category {
+      color: #999;
+      margin: 5px 0;
+    }
+
+    .steemit-post .steemit-post-date-and-category a {
+      color: #999;
+    }
+
+    .steemit-post .steemit-post-image {
+      width: 100%;
+      height: 250px;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    .steemit-post .steemit-post-meta {
+      margin-top: 5px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div id="blog"></div>
+  <script src="../lib/jquery-3.2.1.min.js"></script>
+  <script src="../lib/marked.min.js"></script>
+  <script src="../lib/moment.min.js"></script>
+  <script src="../lib/steem.min.js"></script>
+  <script src="../steemit-posts.js"></script>
+  <script>
+    $('#blog').steemitBlog({
+      user: 'mkt',
+      limit: 9,
+      postTemplate: '<div class="steemit-post"><h2><a href="${URL}">${RESTEEMED}${TITLE}</a></h2><div class="steemit-post-date-and-category">${DATE} in <a href="https://steemit.com/trending/${MAINTAG}">${MAINTAG}</a></div><div class="steemit-post-image" style="background-image: url(${IMAGE});"></div><div class="steemit-post-meta">${UPVOTES} Upvotes (${PAYOUT}) | ${COMMENTS} Comments</div></div>',
+      defaultImage: 'http://markus-kottlaender.de/logo.png',
+      resteemedHtml: '&crarr; ',
+      dateCallback: function (date) {
+        return moment(date).format('MMMM Do YYYY, h:mm a');
+      }
+    });
+  </script>
+</body>
+</html>
