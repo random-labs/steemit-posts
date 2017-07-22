@@ -107,7 +107,7 @@
       limit: 3,
       postTemplate: '<div class="steemit-post"><h2><a href="${URL}">${RESTEEMED}${TITLE}</a></h2><div class="steemit-post-date-and-category">${DATE} in <a href="https://steemit.com/trending/${MAINTAG}">${MAINTAG}</a><br>by ${AUTHOR}</div><div class="steemit-post-image" style="background-image: url(${IMAGE});"></div><div class="steemit-post-meta">${UPVOTES} Upvotes (${PAYOUT}) | ${COMMENTS} Comments</div></div>',
       defaultImage: 'http://markus-kottlaender.de/logo.png',
-      resteemedHtml: '&crarr; ',
+      resteemedIndicator: '&crarr; ',
       dateCallback: function (date) {
         return moment(date).format('MMMM Do YYYY, h:mm a');
       }
@@ -118,7 +118,7 @@
       limit: 3,
       postTemplate: '<div class="steemit-post"><h2><a href="${URL}">${RESTEEMED}${TITLE}</a></h2><div class="steemit-post-date-and-category">${DATE} in <a href="https://steemit.com/trending/${MAINTAG}">${MAINTAG}</a><br>by ${AUTHOR} ${RESTEEMEDBY}</div><div class="steemit-post-image" style="background-image: url(${IMAGE});"></div><div class="steemit-post-meta">${UPVOTES} Upvotes (${PAYOUT}) | ${COMMENTS} Comments</div></div>',
       defaultImage: 'http://markus-kottlaender.de/logo.png',
-      resteemedHtml: '&crarr; ',
+      resteemedIndicator: '&crarr; ',
       dateCallback: function (date) {
         return moment(date).format('MMMM Do YYYY, h:mm a');
       }

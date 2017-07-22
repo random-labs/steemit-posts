@@ -8,7 +8,7 @@
             limit: 10,
             postTemplate: '<div><a href="${URL}">${TITLE}</a>${RESTEEMED}<br>${Payout}, ${UPVOTES} Upvotes, ${COMMENTS} Comments</div>',
             defaultImage: 'http://via.placeholder.com/860x460',
-            resteemedHtml: ' (resteemed) ',
+            resteemedIndicator: ' (resteemed) ',
             dateCallback: function (date) {
                 return date;
             }
@@ -23,7 +23,7 @@
                     .replace(/\${URL}/gi, 'https://steemit.com' + blog[i].url)
                     .replace(/\${TITLE}/gi, blog[i].title)
                     .replace(/\${AUTHOR}/gi, blog[i].author)
-                    .replace(/\${RESTEEMED}/gi, blog[i].author != settings.user ? settings.resteemedHtml : '')
+                    .replace(/\${RESTEEMED}/gi, blog[i].author != settings.user ? settings.resteemedIndicator : '')
                     .replace(/\${DATE}/gi, settings.dateCallback(new Date(blog[i].created)))
                     .replace(/\${IMAGE}/gi, metaData.image ? metaData.image[0] : settings.defaultImage)
                     .replace(/\${PAYOUT}/gi, blog[i].pending_payout_value)
@@ -44,7 +44,7 @@
             limit: 10,
             postTemplate: '<div><a href="${URL}">${TITLE}</a>${RESTEEMED}<br>${Payout}, ${UPVOTES} Upvotes, ${COMMENTS} Comments</div>',
             defaultImage: 'http://via.placeholder.com/860x460',
-            resteemedHtml: ' (resteemed) ',
+            resteemedIndicator: ' (resteemed) ',
             dateCallback: function (date) {
                 return date;
             }
@@ -59,7 +59,7 @@
                     .replace(/\${URL}/gi, 'https://steemit.com' + blog[i].url)
                     .replace(/\${TITLE}/gi, blog[i].title)
                     .replace(/\${AUTHOR}/gi, blog[i].author)
-                    .replace(/\${RESTEEMED}/gi, blog[i].first_reblogged_by ? settings.resteemedHtml : '')
+                    .replace(/\${RESTEEMED}/gi, blog[i].first_reblogged_by ? settings.resteemedIndicator : '')
                     .replace(/\${RESTEEMEDBY}/gi, blog[i].first_reblogged_by ? 'resteemed by ' + blog[i].first_reblogged_by : '')
                     .replace(/\${DATE}/gi, settings.dateCallback(new Date(blog[i].created)))
                     .replace(/\${IMAGE}/gi, metaData.image ? metaData.image[0] : settings.defaultImage)
