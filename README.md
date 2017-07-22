@@ -19,7 +19,7 @@ For the impatient, here's a quick minimum implementation to display your own pos
 ```
 You can adjust it to your needs, by looking at the [options](#step-3-configure).
 
-There is also a simple and an advanced example html file in the `examples` directory.
+There are also two example html files in the `docs/examples` directory.
 
 # Step 1: Installation
 
