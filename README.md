@@ -21,7 +21,7 @@ You can also download those files and upload them to you webspace. However, usin
             // ...
         });
     </script>
-    
+
 # Options
 
 - **user**: string, the steemit.com username (default: `'mkt'`)
@@ -42,3 +42,4 @@ In the html of the`postTemplate` option you can use the following placeholders:
 - *${PAYOUT}*: total post payout in SBD
 - *${COMMENTS}*: number of comments
 - *${UPVOTES}*: number of upvotes
+- *${MAINTAG}*: the first tag (category)
