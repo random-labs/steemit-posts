@@ -6,7 +6,7 @@
         var settings = $.extend({
             user: "mkt",
             limit: 10,
-            postTemplate: '<a class="steemit-post" href="https://steemit.com${URL}"><h2>${RESTEEMED}${TITLE} <small>in ${MAINTAG}</small></h2><h5>${DATE}</h5><img src="${IMAGE}" alt="${TITLE}" /><p>${PAYOUT}</p><p>${COMMENTS} comments</p><p>${UPVOTES} upvotes</p></a>',
+            postTemplate: '<a class="steemit-post" href="${URL}"><h2>${RESTEEMED}${TITLE} <small>in ${MAINTAG}</small></h2><h5>${DATE}</h5><img src="${IMAGE}" alt="${TITLE}" /><p>${PAYOUT}</p><p>${COMMENTS} comments</p><p>${UPVOTES} upvotes</p></a>',
             defaultImage: 'http://via.placeholder.com/860x460',
             resteemedHtml: 'Resteemed: ',
             dateCallback: function (date) {
@@ -41,7 +41,7 @@
         var settings = $.extend({
             user: "mkt",
             limit: 10,
-            postTemplate: '<a class="steemit-post" href="https://steemit.com${URL}"><h2>${RESTEEMED}${TITLE} <small>in ${MAINTAG}</small></h2><h5>${DATE}</h5><img src="${IMAGE}" alt="${TITLE}" /><p>${PAYOUT}</p><p>${COMMENTS} comments</p><p>${UPVOTES} upvotes</p></a>',
+            postTemplate: '<a class="steemit-post" href="${URL}"><h2>${RESTEEMED}${TITLE} <small>in ${MAINTAG}</small></h2><h5>${DATE}</h5><img src="${IMAGE}" alt="${TITLE}" /><p>${PAYOUT}</p><p>${COMMENTS} comments</p><p>${UPVOTES} upvotes</p></a>',
             defaultImage: 'http://via.placeholder.com/860x460',
             resteemedHtml: 'Resteemed: ',
             dateCallback: function (date) {
@@ -78,7 +78,7 @@
         var settings = $.extend({
             tag: null,
             limit: 10,
-            postTemplate: '<a class="steemit-post" href="https://steemit.com${URL}"><h2>${RESTEEMED}${TITLE} <small>in ${MAINTAG}</small></h2><h5>${DATE}</h5><img src="${IMAGE}" alt="${TITLE}" /><p>${PAYOUT}</p><p>${COMMENTS} comments</p><p>${UPVOTES} upvotes</p></a>',
+            postTemplate: '<a class="steemit-post" href="${URL}"><h2>${RESTEEMED}${TITLE} <small>in ${MAINTAG}</small></h2><h5>${DATE}</h5><img src="${IMAGE}" alt="${TITLE}" /><p>${PAYOUT}</p><p>${COMMENTS} comments</p><p>${UPVOTES} upvotes</p></a>',
             defaultImage: 'http://via.placeholder.com/860x460',
             resteemedHtml: 'Resteemed: ',
             dateCallback: function (date) {
@@ -115,7 +115,7 @@
         var settings = $.extend({
             tag: null,
             limit: 10,
-            postTemplate: '<a class="steemit-post" href="https://steemit.com${URL}"><h2>${RESTEEMED}${TITLE} <small>in ${MAINTAG}</small></h2><h5>${DATE}</h5><img src="${IMAGE}" alt="${TITLE}" /><p>${PAYOUT}</p><p>${COMMENTS} comments</p><p>${UPVOTES} upvotes</p></a>',
+            postTemplate: '<a class="steemit-post" href="${URL}"><h2>${RESTEEMED}${TITLE} <small>in ${MAINTAG}</small></h2><h5>${DATE}</h5><img src="${IMAGE}" alt="${TITLE}" /><p>${PAYOUT}</p><p>${COMMENTS} comments</p><p>${UPVOTES} upvotes</p></a>',
             defaultImage: 'http://via.placeholder.com/860x460',
             resteemedHtml: 'Resteemed: ',
             dateCallback: function (date) {
