@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
 title: "Steemit Posts jQuery Plugin"
 description: "Display posts from steemit.com on your website!"
+show_downloads: true
