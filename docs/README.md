@@ -1,4 +1,6 @@
-# Steemit Posts
+# Steemit Posts On Your Website!
+
+![header](https://steemitimages.com/DQmQoQmUPFc6ed6E1aZfL5ByrFG44qALMyb3zeVtyVrEEeY/website-plugin.png)
 
 ### This jQuery plugin lets you display posts from steemit.com on your website.
 
