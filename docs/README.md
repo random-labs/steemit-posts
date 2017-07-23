@@ -1,8 +1,8 @@
 # Steemit Posts On Your Website!
 
-![header](https://steemitimages.com/DQmQoQmUPFc6ed6E1aZfL5ByrFG44qALMyb3zeVtyVrEEeY/website-plugin.png)
-
 ### This jQuery plugin lets you display posts from steemit.com on your website.
+
+![header](https://steemitimages.com/DQmQoQmUPFc6ed6E1aZfL5ByrFG44qALMyb3zeVtyVrEEeY/website-plugin.png)
 
 #### Demos: [Simple](https://mktcode.github.io/steemit-posts/examples/simple.html) - [Advanced](https://mktcode.github.io/steemit-posts/examples/advanced.html) - [Live](https://markus-kottlaender.de)
 
