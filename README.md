@@ -1,3 +1,5 @@
+# New Repo: https://github.com/mktcode/jquery-steemit
+
 # Steemit Posts
 
 ### This jQuery plugin lets you display posts from steemit.com on your website.
