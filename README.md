@@ -1,4 +1,4 @@
-# New Repo: https://github.com/mktcode/jquery-steemit
+# New Repo: https://github.com/mktcode/steemit-widgets
 
 # Steemit Posts
 
